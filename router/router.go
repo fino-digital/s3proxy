@@ -23,6 +23,8 @@ func NewGinEngine(ginMode string, version string, urlExpiration time.Duration, s
 	gin.SetMode(ginMode)
 
 	engine := gin.New()
+	// we do not want any path hinting, this is not supposed to be used interactively, but programmatically.
+	engine.RedirectTrailingSlash = false
 
 	// Use middleware for logger, authorization
 	engine.Use(middleware.NewLogger(log, "/"), middleware.NewRecovery(log), middleware.NewAuthorization(serverAPIKey, "/"))

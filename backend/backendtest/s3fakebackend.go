@@ -59,7 +59,7 @@ func (b *S3FakeBackend) DeleteObject(object backend.BucketObject) error {
 	return nil
 }
 
-func (b *S3FakeBackend) BatchDeleteObjects(objects []backend.BucketObject) error {
+func (b *S3FakeBackend) BatchDeleteObjects(_ []backend.BucketObject) error {
 	return nil
 }
 

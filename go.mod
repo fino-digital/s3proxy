@@ -3,7 +3,7 @@ module github.com/mirakl/s3proxy
 go 1.21
 
 require (
-	github.com/aws/aws-sdk-go v1.42.53
+	github.com/aws/aws-sdk-go v1.49.15
 	github.com/gin-gonic/gin v1.7.7
 	github.com/go-errors/errors v1.4.2
 	github.com/op/go-logging v0.0.0-20160315200505-970db520ece7
